@@ -13,4 +13,5 @@ Today I Learned
 ## MyBatis
 
 ## DB
-
+*postgresql
+*oracle
