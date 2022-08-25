@@ -17,7 +17,15 @@ document.getElementById('[태그id]').innerHTML = [샬라샬라]
 * 객체 배열에 객체 추가 방법
 ```javascript
 // push()
-[객체명].push([{[key] : [value], [ ... ] }, { ... }]);
+객체명.push([
+    { 
+        key : value,
+        ...
+    },
+    {
+        ...
+    }
+]);
 ```
 
 * 객체에 요소 추가 방법
