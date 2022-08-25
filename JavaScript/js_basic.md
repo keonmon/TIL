@@ -6,6 +6,7 @@
 * HTML태그 select 
 ```javascript
 document.getElementById('[태그id]');
+```
 
 * 태그안에 표출할 것들 삽입
 ```javascript
