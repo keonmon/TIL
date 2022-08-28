@@ -2,8 +2,8 @@
 * 인프런 강좌 내용을 정리합니다.
 
 ## 목차
-> [01. var 변수의 문제점](https://github.com/keonmon/TIL/edit/main/JavaScript/%EC%8B%A4%EC%A0%84JavaScript/readme.md#01-var-%EB%B3%80%EC%88%98%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90)    
-> [02. const, let 변수의 특징](https://github.com/keonmon/TIL/edit/main/JavaScript/%EC%8B%A4%EC%A0%84JavaScript/readme.md#02-const-let-%EB%B3%80%EC%88%98%EC%9D%98-%ED%8A%B9%EC%A7%95)     
+> [01. var 변수의 문제점](#01-var-변수의-문제점)    
+> [02. const, let 변수의 특징](#02-const-let-변수의-특징)     
 
 
 <br>
