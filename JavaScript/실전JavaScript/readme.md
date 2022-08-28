@@ -1,6 +1,13 @@
 # 실전 JavaScript
 * 인프런 강좌 내용을 정리합니다.
 
+## 목차
+> [01. var 변수의 문제점](https://github.com/keonmon/TIL/edit/main/JavaScript/%EC%8B%A4%EC%A0%84JavaScript/readme.md#01-var-%EB%B3%80%EC%88%98%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90)    
+> [02. const, let 변수의 특징](https://github.com/keonmon/TIL/edit/main/JavaScript/%EC%8B%A4%EC%A0%84JavaScript/readme.md#02-const-let-%EB%B3%80%EC%88%98%EC%9D%98-%ED%8A%B9%EC%A7%95)     
+
+
+<br>
+
 ## 01. var 변수의 문제점
 1. 함수 내에서 var 키워드로 정의된 변수는 그 함수 내에서만 사용 가능하다.
 ```javascript
@@ -32,6 +39,7 @@ example2();
 // 이렇게 전역변수가 되는것을 피하기 위해서 파일 최상단에 'use strict'를 선언할 수 있다.
 ```
 <br>
+
 3. 반복문에서 생성된 var변수는 반복문이 끝난 뒤에도 살아있다.
 ```javascript
 // var은 함수 스코프이기 때문에 for문에서 정의된 변수가 반복문이 끝난 이후에도 계속 남아있는 문제가 생긴다.
@@ -97,6 +105,8 @@ var myVar = 1;
 var myVar = 2;
 console.log(myVar); // 2
 ```
+<br>
+
 7. 재할당 가능한 var 키워드
 ```javascript
 // var는 재할당 가능한 변수로 밖에 만들 수 없다.
