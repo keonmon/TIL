@@ -11,6 +11,7 @@ Today I Learned
 
 ## Spring Framework
  * [Basic](https://github.com/keonmon/TIL/blob/main/SpringFramework/Basic.md)
+ * [@ResponseBody](https://github.com/keonmon/TIL/blob/main/SpringFramework/ResponseBody.md)
 
 ## MyBatis
  * [MyBatis](https://github.com/keonmon/TIL/blob/main/MyBatis/MyBatis.md)
