@@ -1,4 +1,4 @@
-# SpringFramework - @RequestBody란?
+# SpringFramework - `@RequestBody`란?
 * `@ResponseBody`는 Controller에서 뷰(jsp 등)가 아닌 `데이터(json타입 등)을 리턴`하고 싶을 때 사용하는 어노테이션
 <br>
 
