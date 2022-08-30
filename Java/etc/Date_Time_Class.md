@@ -1,5 +1,5 @@
-# 날짜관련 클래스
-* 날짜와 관련된 Class를 다룬다.
+# Java - 날짜/시간 관련 클래스
+* Java에서 날짜와 시간에 관련된 Class를 정리한다.
 * `Date`, `Calendar`, `LocalDate`, `SimpleDateFormat` 등
 <br>
 
