@@ -25,7 +25,7 @@
 > ```
 <br>
 
-## HashMap to JSONObject
+### `HashMap` to `JSONObject`
 * HashMap에 저장된 데이터를 JSON으로 손쉽게 변환할 수 있다.
 * `JSONObject json = new JSONObject(map)`과 같이 생성자의 인자로 전달한다.
 > ```java
@@ -51,7 +51,7 @@
 >}
 > ```
 
-# POJO to JSONObject
+### `POJO`to `SONObject`
 * POJO(Plain Old Java Object) : get/set 메서드만 있는 DTO와 같은 자바 클래스
 * JSONObject는 POJO객체를 인자로 받아 key, value를 추출할 수 있다.
 >```java
@@ -97,5 +97,64 @@
 <br>
 
 ## JSONArray
-* JSON은 key-value형태로 데이터를 갖는데, 여기서 value는 `Array`타입이 될 수 있다.
-`"friends":[`
+* JSON은 key-value형태로 데이터를 갖는데, 여기서 value는 `Array`타입이 될 수 있다.    
+`"friends":["tom","sam"]`
+* JSONArray에 `put(value)`로 0개 이상의 데이터를 배열에 추가할 수 있다.
+* 그리고 JSONObject의 value로 JSONArray가 되도록 다시 추가 가능하다.
+* 반대로, JSONArray에 JSONObject가 들어갈 수도 있다.
+`"jsonArray":"["tom":"sam"]"`
+>```java
+>import org.json.JSONArray;
+>import org.json.JSONException;
+>import org.json.JSONObject;
+>
+>public class JsonExample5 {
+>
+>    public static void main(String[] args) throws JSONException {
+>
+>        JSONArray jArray = new JSONArray();
+>        jArray.put("jsonarray1");
+>        jArray.put("jsonarray2");
+>
+>        JSONObject json = new JSONObject();
+>        json.put("name", "json");
+>        json.put("type", "jsonObject");
+>        json.put("array", jArray);
+>
+>        System.out.println(json.toString());
+>        // -> {"name":"json","type":"jsonObject","array":["jsonarray1","jsonarray2"]}
+>    }
+>}
+>```
+<br>
+
+### `List` to `JSONArray`
+* JSONArray 생성자의 인자로 List를 보내면 List의 모든 데이터가 JSONArray에 추가된다.
+>```java
+>import org.json.JSONArray;
+>import org.json.JSONException;
+>import org.json.JSONObject;
+>
+>import java.util.ArrayList;
+>import java.util.List;
+>
+>public class JsonExample6 {
+>
+>    public static void main(String[] args) throws JSONException {
+>
+>        List<String> list = new ArrayList<>();
+>        list.add("list1");
+>        list.add("list2");
+>
+>        JSONArray jsonArray = new JSONArray(list); // 여기서 인자로 'list'를 전달
+>
+>        JSONObject json = new JSONObject();
+>        jo.put("name", "json");
+>        jo.put("type", "JSONObject");
+>        jo.put("array", jsonArray);
+>
+>        System.out.println(json.toString());
+>        // -> {"name":"json","type":"JSONObject","array":["list1","list2"]}
+>    }
+>}
+>```
