@@ -1,5 +1,5 @@
-# TIL
-* Today I Learned 🔥
+# *TIL*
+*Today I Learned 🔥*
 <br>
 
 ## JavaScript
@@ -11,7 +11,7 @@
 ## Java
 * [etc](https://github.com/keonmon/TIL/tree/main/Java/etc)
   * [Date_Time_Class](https://github.com/keonmon/TIL/blob/main/Java/etc/Date_Time_Class.md)
-  * [json](https://github.com/keonmon/TIL/blob/main/Java/etc/Json.md)
+  * [json 타입](https://github.com/keonmon/TIL/blob/main/Java/etc/Json.md)
 <br>
 
 ## Spring Framework
