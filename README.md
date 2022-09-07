@@ -12,8 +12,12 @@
 * [etc](https://github.com/keonmon/TIL/tree/main/Java/etc)
   * [Date_Time_Class](https://github.com/keonmon/TIL/blob/main/Java/etc/Date_Time_Class.md)
   * [json 타입](https://github.com/keonmon/TIL/blob/main/Java/etc/Json.md)   
-* [자바의 역사](https://github.com/keonmon/TIL/blob/main/Java/history.md)
-* [JVM의 개요](https://github.com/keonmon/TIL/blob/main/Java/JVM.md)   
+* [Basic]()   
+  * [자바의 역사](https://github.com/keonmon/TIL/blob/main/Java/Basic/history.md)
+  * [JVM의 개요](https://github.com/keonmon/TIL/blob/main/Java/Basic/JVM.md)    
+  * [변수](https://github.com/keonmon/TIL/blob/main/Java/Basic/variable.md)   
+  * [상수와 리터럴](https://github.com/keonmon/TIL/blob/main/Java/Basic/constant_literal.md)   
+
 * [javadocs](https://github.com/keonmon/TIL/blob/main/Java/Javadocs.md)
 <br>
 
