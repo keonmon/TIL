@@ -6,3 +6,6 @@
 
 ## JSONObject/JSONArray
 * [json](https://github.com/keonmon/TIL/blob/main/Java/etc/Json.md)
+
+## HashMap(entrySet(), keySet())
+* [HashMap(entrySet(), keySet() 메서드)](https://github.com/keonmon/TIL/blob/main/Java/etc/HashMap.md)
