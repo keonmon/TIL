@@ -13,6 +13,7 @@
 * [etc](https://github.com/keonmon/TIL/tree/main/Java/etc)
   * [Date_Time_Class](https://github.com/keonmon/TIL/blob/main/Java/etc/Date_Time_Class.md)
   * [json 타입](https://github.com/keonmon/TIL/blob/main/Java/etc/Json.md)   
+  * [HashMap(entrySet(), keySet() 메서드)](https://github.com/keonmon/TIL/blob/main/Java/etc/HashMap.md)
 * [Basic](https://github.com/keonmon/TIL/tree/main/Java/Basic) : *Java기초 개념/이론을 복습하기 위해 정리한 글 모음* 
   * [자바의 역사](https://github.com/keonmon/TIL/blob/main/Java/Basic/history.md)
   * [JVM의 개요](https://github.com/keonmon/TIL/blob/main/Java/Basic/JVM.md)    
