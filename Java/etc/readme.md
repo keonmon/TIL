@@ -15,3 +15,6 @@
 
 ## 논리연산자의 숏서킷
 * [short-circuit](https://github.com/keonmon/TIL/blob/main/Java/etc/short-circuit.md)
+
+## 이항연산자의 형변환 특징
+* [이항연산자의 형변환](https://github.com/keonmon/TIL/blob/main/Java/etc/binaryOperator.md)
