@@ -15,6 +15,8 @@
   * [json 타입](https://github.com/keonmon/TIL/blob/main/Java/etc/Json.md)   
   * [HashMap(entrySet(), keySet() 메서드)](https://github.com/keonmon/TIL/blob/main/Java/etc/HashMap.md)
   * [overloading 타입 매칭 예시](https://github.com/keonmon/TIL/blob/main/Java/etc/overloadingTest.md)
+  * [short-circuit(논리연산 숏서킷)](https://github.com/keonmon/TIL/blob/main/Java/etc/short-circuit.md)
+  * [이항연산자의 형변환 특징](https://github.com/keonmon/TIL/blob/main/Java/etc/binaryOperator.md)
 * [Basic](https://github.com/keonmon/TIL/tree/main/Java/Basic) : *Java기초 개념/이론을 복습하기 위해 정리한 글 모음* 
   * [자바의 역사](https://github.com/keonmon/TIL/blob/main/Java/Basic/history.md)
   * [JVM의 개요](https://github.com/keonmon/TIL/blob/main/Java/Basic/JVM.md)    
