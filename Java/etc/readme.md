@@ -18,3 +18,6 @@
 
 ## 이항연산자의 형변환 특징
 * [이항연산자의 형변환](https://github.com/keonmon/TIL/blob/main/Java/etc/binaryOperator.md)
+
+## Math.random()과 Random.nextInt()의 비교
+* [Math.random()과 Random.nextInt()의 비교](https://github.com/keonmon/TIL/blob/main/Java/etc/Math_random_VS_Random_nextInt.md)
