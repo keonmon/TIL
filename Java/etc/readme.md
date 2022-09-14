@@ -12,3 +12,6 @@
 
 ## overloading 타입 매칭 예시
 * [overloading 타입 매칭 예시](https://github.com/keonmon/TIL/blob/main/Java/etc/overloadingTest.md)
+
+## 논리연산자의 숏서킷
+* [short-circuit](https://github.com/keonmon/TIL/blob/main/Java/etc/short-circuit.md)
