@@ -21,3 +21,6 @@
 
 ## Math.random()과 Random.nextInt()의 비교
 * [Math.random()과 Random.nextInt()의 비교](https://github.com/keonmon/TIL/blob/main/Java/etc/Math_random_VS_Random_nextInt.md)
+
+## 배열 정렬 알고리즘
+* [배열 sorting](https://github.com/keonmon/TIL/blob/main/Java/etc/ArraySorting.md)
