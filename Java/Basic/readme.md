@@ -13,3 +13,4 @@
 * [삼항연산자](https://github.com/keonmon/TIL/blob/main/Java/Basic/conditionalOperator.md)
 * [foreach문](https://github.com/keonmon/TIL/blob/main/Java/Basic/foreach.md)
 * [OOP, 객체 지향 프로그래밍](https://github.com/keonmon/TIL/blob/main/Java/Basic/OOP.md)
+* [static키워드](https://github.com/keonmon/TIL/blob/main/Java/Basic/static.md)
