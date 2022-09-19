@@ -24,3 +24,6 @@
 
 ## 배열 정렬 알고리즘
 * [배열 sorting](https://github.com/keonmon/TIL/blob/main/Java/etc/ArraySorting.md)
+
+## 기본형/참조형 매개변수(Call By Value or Reference)
+* [기본/참조형 매개변수의 특징](https://github.com/keonmon/TIL/blob/main/Java/etc/callByValOrRef.md)
