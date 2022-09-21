@@ -24,7 +24,7 @@
 여기서 `A클래스는 상위클래스(SuperClass)`고, `B클래스는 하위클래스(SubClass)`라고 한다. 
 
 * 예를 들어, **포유류(A)는 사람(B)보다 더 일반적인 개념**인데, 이것은 사람(A)이 포유류(B)의 특징과 기능을 포함해 더 많거나, **추가적인 특징이 있다는 의미.**
-이렇게 상송관계에는 `상위클래스(A)가 하위클래스(B)보다 더 일반적인 개념`이고, `**하위클래스(B)는** 상위클래스(A)보다 **구체적인 클래스**`가 된다.
+이렇게 상송관계에는 `상위클래스(A)가 하위클래스(B)보다 더 일반적인 개념`이고, `하위클래스(B)는 상위클래스(A)보다 구체적인 클래스`가 된다.
 
 
 ## 다형성 Polymorphism
@@ -34,3 +34,57 @@
 
 * 상위클래스(A)에서 공통부분의 메서드를 제공하고, 하위클래스(B)에서는 그에 기반한 추가요소를 덧붙여 구현한다. 이러면 코드량이 줄어 가독성도 좋아질 뿐더러, 유지보수도 편리하게 된다.
 
+```java
+public class InheritanceEx4 {
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		s1.study();	// 학생이 도서관에서 공부를 합니다.
+
+		UniversityStudent u2 = new UniversityStudent();
+		u2.study();	// 대학생이 도서관에서 공부를 합니다.
+		
+		System.out.println("\n======다형성 적용======\n");
+		
+		Student s2 = new UniversityStudent();	// 가능
+		s2.study();	// 대학생이 도서관에서 공부를 합니다.
+		/* 대학생은 학생이다. (o) <- Student s = new UniversityStudent(); */
+		
+		// UniversityStudent s = new Student(); // 불가능
+		/* 학생은 대학생이다. (x) <- UniversityStudent s = new Student(); */
+		
+	}
+}
+
+/**
+ *  학생 클래스
+ * @author Home
+ */
+class Student{
+	
+	// constructors
+	public Student() {}
+	
+	/**
+	 * 학생이 공부를 하는 메서드
+	 */
+	public void study() {
+		System.out.println("학생이 공부를 합니다.");
+	}
+}
+
+/**
+ *  학생을 상속받은 대학생 클래스
+ * @author Home
+ */
+class UniversityStudent extends Student{
+	
+	// constructor
+	public UniversityStudent() {}
+	
+	@Override
+	public void study() {
+		System.out.println("대학생이 도서관에서 공부를 합니다.");
+	}
+}
+
+```
