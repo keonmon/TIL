@@ -64,7 +64,7 @@ class Person implements Tick {
  */
 class MyTimer {
 	private int interval;
-	private Tick tick;
+	private Tick operator;
 	
 	public MyTimer(int interval) {
 		this.interval = interval;
@@ -72,10 +72,10 @@ class MyTimer {
 	
 	/**
 	 * Tick을 구현한 객체(Person)를 저장 
-	 * @param tick
+	 * @param operator
 	 */
-	public void setAction(Tick tick) {
-		this.tick = tick;
+	public void setAction(Tick operator) {
+		this.operator = operator;
 	}
 	
 	/**
@@ -91,7 +91,7 @@ class MyTimer {
 				e.printStackTrace();
 			}
 		}
-		tick.onTime();
+		operator.onTime();
 	}
 	
 }
