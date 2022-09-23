@@ -17,3 +17,5 @@
 * [상속과 포함관계](https://github.com/keonmon/TIL/blob/main/Java/Basic/InheritanceAndComposite.md)
 * [Object클래스](https://github.com/keonmon/TIL/blob/main/Java/Basic/Object.md)
 * [super키워드](https://github.com/keonmon/TIL/blob/main/Java/Basic/super.md)
+* [instanceof 연산자](https://github.com/keonmon/TIL/blob/main/Java/Basic/instanceof.md)
+* [interface](https://github.com/keonmon/TIL/blob/main/Java/Basic/interface.md)
