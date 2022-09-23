@@ -20,6 +20,7 @@
   * [Math.random()과 Random.nextInt()의 비교](https://github.com/keonmon/TIL/blob/main/Java/etc/Math_random_VS_Random_nextInt.md)
   * [배열 sorting 알고리즘](https://github.com/keonmon/TIL/blob/main/Java/etc/ArraySorting.md)
   * [기본/참조형 매개변수의 특징](https://github.com/keonmon/TIL/blob/main/Java/etc/callByValOrRef.md)
+  * [콜백함수](https://github.com/keonmon/TIL/blob/main/Java/etc/callBackFunction.md)
 * [Basic](https://github.com/keonmon/TIL/tree/main/Java/Basic) : *Java기초 개념/이론을 복습하기 위해 정리한 글 모음* 
   * [자바의 역사](https://github.com/keonmon/TIL/blob/main/Java/Basic/history.md)
   * [JVM의 개요](https://github.com/keonmon/TIL/blob/main/Java/Basic/JVM.md)    
@@ -35,6 +36,8 @@
   * [상속과 포함관계](https://github.com/keonmon/TIL/blob/main/Java/Basic/InheritanceAndComposite.md)
   * [Object클래스](https://github.com/keonmon/TIL/blob/main/Java/Basic/Object.md)
   * [super키워드](https://github.com/keonmon/TIL/blob/main/Java/Basic/super.md)
+  * [instanceof 연산자](https://github.com/keonmon/TIL/blob/main/Java/Basic/instanceof.md)
+  * [interface](https://github.com/keonmon/TIL/blob/main/Java/Basic/interface.md)
 
 
 * [javadocs](https://github.com/keonmon/TIL/blob/main/Java/Javadocs.md)
