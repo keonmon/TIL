@@ -21,6 +21,8 @@
   * [배열 sorting 알고리즘](https://github.com/keonmon/TIL/blob/main/Java/etc/ArraySorting.md)
   * [기본/참조형 매개변수의 특징](https://github.com/keonmon/TIL/blob/main/Java/etc/callByValOrRef.md)
   * [콜백함수](https://github.com/keonmon/TIL/blob/main/Java/etc/callBackFunction.md)
+  * [checked & unchecked Exception 비교](https://github.com/keonmon/TIL/blob/main/Java/etc/checkedException.md)
+
 * [Basic](https://github.com/keonmon/TIL/tree/main/Java/Basic) : *Java기초 개념/이론을 복습하기 위해 정리한 글 모음* 
   * [자바의 역사](https://github.com/keonmon/TIL/blob/main/Java/Basic/history.md)
   * [JVM의 개요](https://github.com/keonmon/TIL/blob/main/Java/Basic/JVM.md)    
@@ -39,7 +41,8 @@
   * [instanceof 연산자](https://github.com/keonmon/TIL/blob/main/Java/Basic/instanceof.md)
   * [interface](https://github.com/keonmon/TIL/blob/main/Java/Basic/interface.md)
   * [컬렉션 프레임워크](https://github.com/keonmon/TIL/blob/main/Java/Basic/CollectionFramework.md)
-
+  * [IO-입/출력](https://github.com/keonmon/TIL/blob/main/Java/Basic/IO.md)
+  
 
 * [javadocs](https://github.com/keonmon/TIL/blob/main/Java/Javadocs.md)
 
