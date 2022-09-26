@@ -30,3 +30,6 @@
 
 ## 콜백함수 예제 (Callback Function)
 * [콜백함수](https://github.com/keonmon/TIL/blob/main/Java/etc/callBackFunction.md)
+
+## checked Exception & unchecked Exception 예외처리 비교
+- [checked & unchecked Exception 비교](https://github.com/keonmon/TIL/blob/main/Java/etc/checkedException.md)
