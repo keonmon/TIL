@@ -85,9 +85,9 @@ public class IOEx3 {
 		final String OUTPUT_FILE = "output.txt";
 		
 		FileReader fis = new FileReader(INPUT_FILE);
-		FileWriter fos = new FileWriter(OUTPUT_FILE);
-		
 		BufferedReader br = new BufferedReader(fis);
+		
+		FileWriter fos = new FileWriter(OUTPUT_FILE);
 		PrintWriter pw = new PrintWriter(fos);
 		
 		
@@ -159,9 +159,9 @@ public class IOEx3 {
 		final String OUTPUT_FILE = "output.txt";
 		
 		FileReader fis = new FileReader(INPUT_FILE);
-		FileWriter fos = new FileWriter(OUTPUT_FILE);
-		
 		BufferedReader br = new BufferedReader(fis);
+		
+		FileWriter fos = new FileWriter(OUTPUT_FILE);
 		PrintWriter pw = new PrintWriter(fos);
 		
 		
