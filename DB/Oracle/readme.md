@@ -6,3 +6,7 @@
 * [소유테이블조회(tab)](https://github.com/keonmon/TIL/blob/main/DB/Oracle/DataDictionary.md)
 * [테이블컬럼조회(desc)](https://github.com/keonmon/TIL/blob/main/DB/Oracle/describe.md)
 - [SELECT절](https://github.com/keonmon/TIL/blob/main/DB/Oracle/SELECT%EC%A0%88.md)
+- [ORDER BY절](https://github.com/keonmon/TIL/blob/main/DB/Oracle/orderby.md)
+- [단일행 함수](https://github.com/keonmon/TIL/blob/main/DB/Oracle/function.md)
+- [CASE문](https://github.com/keonmon/TIL/blob/main/DB/Oracle/case.md)
+- [GROUP BY절](https://github.com/keonmon/TIL/blob/main/DB/Oracle/GROUPBY.MD)
