@@ -1,0 +1,54 @@
+# DB - Oracle - with절
+- with절에 대해 복습하고 정리한다.
+---
+
+## 1. WITH절
+
+- **사용할 테이블에 별칭을 지정하여 미리 불러오는 구절**
+
+```sql
+-- 기존 쿼리
+SELECT TA.LNACT, TA.LNACT_SEQ, TA.LN_DT, TA.EXP_DT, TA.DLQ_DT, TA.DLQ_CNT, 
+       TP.계획이자, TR.입금이자
+  FROM (SELECT LNACT, LNACT_SEQ, LN_DT, EXP_DT, DLQ_DT, DLQ_CNT
+          FROM TACCT 
+         WHERE DLQ_CNT   > 0 
+           AND LMT_TYP  IS NULL) TA 
+  JOIN (SELECT LNACT, LNACT_SEQ, SUM(INT_MON_AMT) AS 입금이자
+          FROM TREPAY
+         WHERE PAY_DT    <= SYSDATE
+        GROUP BY LNACT, LNACT_SEQ) TR 
+    ON TA.LNACT     = TR.LNACT 
+   AND TA.LNACT_SEQ = TR.LNACT_SEQ 
+  JOIN (SELECT LNACT, LNACT_SEQ, SUM(INT_MON_AMT) AS 계획이자
+          FROM TREPAY_PLAN
+         WHERE PAY_DT    <= SYSDATE
+        GROUP BY LNACT, LNACT_SEQ) TP 
+    ON  TA.LNACT     = TP.LNACT 
+    AND TA.LNACT_SEQ = TP.LNACT_SEQ 
+ORDER BY 1,2 ;
+
+-- WITH절로 정리
+WITH TA AS (SELECT LNACT, LNACT_SEQ, LN_DT, EXP_DT, DLQ_DT, DLQ_CNT
+              FROM TACCT 
+             WHERE DLQ_CNT   > 0 
+               AND LMT_TYP  IS NULL) 
+    ,TR AS (SELECT LNACT, LNACT_SEQ, SUM(INT_MON_AMT) AS 입금이자
+              FROM TREPAY
+             WHERE PAY_DT    <= SYSDATE
+            GROUP BY LNACT, LNACT_SEQ)
+    ,TP AS (SELECT LNACT, LNACT_SEQ, SUM(INT_MON_AMT) AS 계획이자
+              FROM TREPAY_PLAN
+             WHERE PAY_DT    <= SYSDATE
+            GROUP BY LNACT, LNACT_SEQ) 
+SELECT TA.LNACT, TA.LNACT_SEQ, TA.LN_DT, TA.EXP_DT, TA.DLQ_DT, TA.DLQ_CNT, 
+       TP.계획이자, TR.입금이자
+  FROM TA 
+  JOIN TR 
+    ON TA.LNACT     = TR.LNACT 
+   AND TA.LNACT_SEQ = TR.LNACT_SEQ 
+  JOIN TP 
+    ON  TA.LNACT     = TP.LNACT 
+    AND TA.LNACT_SEQ = TP.LNACT_SEQ 
+ORDER BY 1,2 ;
+```
