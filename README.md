@@ -73,6 +73,7 @@
   - [순위함수](https://github.com/keonmon/TIL/blob/main/DB/Oracle/rank.md)
   - [조인과 서브쿼리 비교](https://github.com/keonmon/TIL/blob/main/DB/Oracle/joinvssubquery.md)
   - [with절](https://github.com/keonmon/TIL/blob/main/DB/Oracle/with.md)
+  - [집합 연산자](https://github.com/keonmon/TIL/blob/main/DB/Oracle/union.md)
   
 ## IDE
 * [Eclipse](https://github.com/keonmon/TIL/tree/main/IDE/eclipse)
