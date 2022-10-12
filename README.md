@@ -5,7 +5,7 @@
 ---
 
 ## Java
-* [etc](https://github.com/keonmon/TIL/tree/main/Java/etc)
+### [etc](https://github.com/keonmon/TIL/tree/main/Java/etc)
   * [Date_Time_Class](https://github.com/keonmon/TIL/blob/main/Java/etc/Date_Time_Class.md)
   * [json 타입](https://github.com/keonmon/TIL/blob/main/Java/etc/Json.md)   
   * [HashMap(entrySet(), keySet() 메서드)](https://github.com/keonmon/TIL/blob/main/Java/etc/HashMap.md)
@@ -18,7 +18,7 @@
   * [콜백함수](https://github.com/keonmon/TIL/blob/main/Java/etc/callBackFunction.md)
   * [checked & unchecked Exception 비교](https://github.com/keonmon/TIL/blob/main/Java/etc/checkedException.md)
 
-* [Basic](https://github.com/keonmon/TIL/tree/main/Java/Basic) : *Java기초 개념/이론을 복습하기 위해 정리한 글 모음* 
+### [Basic](https://github.com/keonmon/TIL/tree/main/Java/Basic) : *Java기초 개념/이론을 복습하기 위해 정리한 글 모음* 
   * [자바의 역사](https://github.com/keonmon/TIL/blob/main/Java/Basic/history.md)
   * [JVM의 개요](https://github.com/keonmon/TIL/blob/main/Java/Basic/JVM.md)    
   * [변수](https://github.com/keonmon/TIL/blob/main/Java/Basic/variable.md)   
@@ -52,9 +52,9 @@
 
  
 ## DB
-* [db_이것저것](https://github.com/keonmon/TIL/blob/main/DB/db_%EC%9D%B4%EA%B2%83%EC%A0%80%EA%B2%83.md)
-* [postgresql](https://github.com/keonmon/TIL/blob/main/DB/postgresql.md)
-* [Oracle](https://github.com/keonmon/TIL/tree/main/DB/Oracle)
+### [db_이것저것](https://github.com/keonmon/TIL/blob/main/DB/db_%EC%9D%B4%EA%B2%83%EC%A0%80%EA%B2%83.md)
+### [postgresql](https://github.com/keonmon/TIL/blob/main/DB/postgresql.md)
+### [Oracle](https://github.com/keonmon/TIL/tree/main/DB/Oracle)
   * [Oracle구조](https://github.com/keonmon/TIL/blob/main/DB/Oracle/%EC%98%A4%EB%9D%BC%ED%81%B4%EA%B5%AC%EC%A1%B0.md)
   * [소유테이블조회(tab)](https://github.com/keonmon/TIL/blob/main/DB/Oracle/DataDictionary.md)
   * [테이블컬럼조회(desc)](https://github.com/keonmon/TIL/blob/main/DB/Oracle/describe.md)
@@ -78,7 +78,7 @@
 * [jqGrid](https://github.com/keonmon/TIL/blob/main/JavaScript/jqGrid.md)
   
   
-## HTML & CSS
+## [HTML & CSS](https://github.com/keonmon/TIL/tree/main/HTML%26CSS)
 
 ### HTML5
 - [Web기초](https://github.com/keonmon/TIL/blob/main/HTML%26CSS/webBasic.md)
