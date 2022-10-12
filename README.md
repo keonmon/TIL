@@ -1,13 +1,8 @@
 # *TIL*
 *Today I Learned 🔥*
-<br>
-<br>
+- 매일 학습/복습한 내용을 **정리하고 기록**합니다.
 
-## JavaScript
-* [자바스크립트 기초](https://github.com/keonmon/TIL/blob/main/JavaScript/js_basic.md)
-* [실전 JavaScript](https://github.com/keonmon/TIL/tree/main/JavaScript/%EC%8B%A4%EC%A0%84JavaScript)
-* [jqGrid](https://github.com/keonmon/TIL/blob/main/JavaScript/jqGrid.md)
-
+---
 
 ## Java
 * [etc](https://github.com/keonmon/TIL/tree/main/Java/etc)
@@ -75,8 +70,29 @@
   - [with절](https://github.com/keonmon/TIL/blob/main/DB/Oracle/with.md)
   - [집합 연산자](https://github.com/keonmon/TIL/blob/main/DB/Oracle/union.md)
   
+---
+
+## JavaScript
+* [자바스크립트 기초](https://github.com/keonmon/TIL/blob/main/JavaScript/js_basic.md)
+* [실전 JavaScript](https://github.com/keonmon/TIL/tree/main/JavaScript/%EC%8B%A4%EC%A0%84JavaScript)
+* [jqGrid](https://github.com/keonmon/TIL/blob/main/JavaScript/jqGrid.md)
+  
+  
 ## HTML & CSS
-- 
+
+### HTML5
+- [Web기초](https://github.com/keonmon/TIL/blob/main/HTML%26CSS/webBasic.md)
+- [HTML 태그 정리](https://github.com/keonmon/TIL/blob/main/HTML%26CSS/htmlTags.md)
+
+
+### CSS
+- [선택자](https://github.com/keonmon/TIL/blob/main/HTML%26CSS/selector.md)
+- [박스 모델](https://github.com/keonmon/TIL/blob/main/HTML%26CSS/boxModel.md)
+- [position 속성](https://github.com/keonmon/TIL/blob/main/HTML%26CSS/position.md)
+- [animation 관련 속성](https://github.com/keonmon/TIL/blob/main/HTML%26CSS/animation.md)
+
+
+---
   
 ## IDE
 * [Eclipse](https://github.com/keonmon/TIL/tree/main/IDE/eclipse)
