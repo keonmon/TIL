@@ -1,7 +1,7 @@
-# JavaScript - 이벤트
-- JavaScript의 이벤트에 대해 학습하고 정리한다.
+# JavaScript - 동적 바인딩(DinamicVinding)
+- JavaScript의 동적 바인딩에 대해 학습하고 정리한다.
 ---
-# 1. 데이터 동적 바인딩
+# 1. 데이터 동적 바인딩 (Data DinamicVinding)
 
 ## 1.1. id를 활용한 동적 바인딩
 
