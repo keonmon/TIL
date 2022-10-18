@@ -53,3 +53,49 @@
 - Project 실행
     - `npm start run`
 
+## 1.3. CDN(콘텐츠 전송 네트워크)기반 React 개발
+
+```jsx
+<head>
+    <meta charset="UTF-8">
+    <title>cdn-react</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const App = () => {
+            return(
+                <div>Hello React~~~~</div>
+        )}
+        ReactDOM.render(<App />, document.querySelector('#root'));
+			/*
+	        Hello React~~~~
+       */
+    </script>
+</body>
+```
+
+### 1.3.1. React 구조
+
+참고자료 : [https://velog.io/@97godo/React-React-의-기본-구조](https://velog.io/@97godo/React-React-%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B0)
+
+![Untitled](https://lgh.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F32bc9e9a-6e3f-4bee-8289-19e3456bf073%2FUntitled.png?table=block&id=ab558f65-f983-4431-a59f-5c6b8da3e2fc&spaceId=d2c21b63-4fd7-4cc8-b09a-a59a09d82a76&width=380&userId=&cache=v2)
+
+- **node_module**
+    - create-react-app을 설치하면서 필요한 모듈들이 위치
+- **public**
+    - static 자원(정적 파일) 폴더
+        - i**ndex.html** :
+            - 가상 DOM을 위한 html (**빈 상자**)
+            - 이 파일이 직접적으로 보여지는 것이 아닌, **index.js로 렌더링된 결과가 보여지게 된다.**
+        - **mainfest.json :**
+            - 앱스토어 없이 홈화면에 설치할 수 있는 도구..?
+- **src**
+    - 작업을 위한 공간
+        - **index.js :** 메인파일. 이곳에서 자바스크립트의 컴포넌트를 조합하여 렌더링하고 화면에 보여지게 된다.
+        - **App.js :**  컴포넌트를 정의하는 작업 파일. 여기서 정의한 내용이 최종적으로 index.js에 보내진다.
+        - **App.css :** app.js의 스타일시트
