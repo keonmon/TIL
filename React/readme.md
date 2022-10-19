@@ -7,4 +7,5 @@
 - [데이터 바인딩 기초](https://github.com/keonmon/TIL/blob/main/React/Binding.md)
     - [map()](https://github.com/keonmon/TIL/blob/main/React/map.md)
     - [filter()](https://github.com/keonmon/TIL/blob/main/React/filter.md)
-
+- [컴포넌트](https://github.com/keonmon/TIL/blob/main/React/component.md)
+    - [props](https://github.com/keonmon/TIL/blob/main/React/props.md)
