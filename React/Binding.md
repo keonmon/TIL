@@ -417,4 +417,57 @@ export default App;
 
 ![Untitled](https://lgh.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F27a34a05-9539-4162-9f90-ad6979d79c05%2FUntitled.png?table=block&id=11d7055f-8517-4539-b3c4-02e6cd851b7a&spaceId=d2c21b63-4fd7-4cc8-b09a-a59a09d82a76&width=360&userId=&cache=v2)
 
+## 7. CSS 바인딩
 
+- Object 형식으로 만들어서 직접 태그에 넣는 방식의 스타일 방식 지원(css문법이 아님)
+    - 표현을 사용할 수 없기 때문에 **font-size는 fontSize로 표현**한다.
+- ES6에서는 class키워드이기 때문에 **className을 사용해 class에 바인딩**한다.
+- css파일은 import 구문을 사용해 로딩한다.
+
+```jsx
+import '../App.css';
+
+function App() {
+
+    // 기존 css에서 '-'가 들어가는 스타일명은 카멜형식으로 변경된다.
+    const tempStyle = {
+        display : "inline-block",
+        height : "100px",
+        fontSize : "30px",
+        backgroundColor:"orange"
+    }
+    
+    // jsx에서는 class가 아닌 className으로 태그 class를 부여한다.
+    // 태그의 style속성에 들어갈 변수를 object타입으로 선언 후 부여한다.
+    return (
+        <div>
+            <div className='App'>Hello~!</div>
+            <div className='box-info mg-10'> 안녕하세요~! </div>
+            <div style={tempStyle}> 으하하~! </div>
+        </div>
+    );
+}
+
+export default App;
+```
+
+- App.css
+
+```css
+.App {
+  text-align: center;
+}
+
+/* AppCSS.js */
+.box-info{
+  background-color : yellow;
+}
+
+.mg-10{
+  margin : 10px;
+}
+
+...
+```
+
+![Untitled](https://lgh.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2fc796c5-65a2-4133-b92d-89f9378a2c84%2FUntitled.png?table=block&id=4c000fee-b334-4ee1-ba84-8bfe79c27afc&spaceId=d2c21b63-4fd7-4cc8-b09a-a59a09d82a76&width=740&userId=&cache=v2)
