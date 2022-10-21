@@ -1,0 +1,14 @@
+.stars {
+  color: red;
+}
+
+.class2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: .2s
+}
+
+.class2:hover {
+  transform: scale(300%);
+}
