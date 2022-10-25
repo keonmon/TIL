@@ -42,3 +42,58 @@
 
 ![Untitled](https://lgh.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb390d251-88f8-4735-8965-763c97d7c754%2FUntitled.png?table=block&id=296be873-dc15-4060-bc58-944f79313d71&spaceId=d2c21b63-4fd7-4cc8-b09a-a59a09d82a76&width=960&userId=&cache=v2)
 
+
+## 1.5. 서블릿의 request data 처리
+### 1.5.1. **GET방식**
+
+- **html <form>**
+
+![Untitled](https://lgh.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2aa1be0a-e6cb-41fc-b08d-c44b280c14fc%2FUntitled.png?table=block&id=d1d269ff-192b-4164-bc03-fd5c9bd64b14&spaceId=d2c21b63-4fd7-4cc8-b09a-a59a09d82a76&width=1930&userId=&cache=v2)
+
+- **servlet**
+    - GET 방식의 **질의 문자열 추출**
+
+```java
+@WebServlet("/QueryTestServlet")
+public class QueryTestServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public QueryTestServlet() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		String id = req.getParameter("id");
+		String pwd = req.getParameter("pwd");
+		String name = req.getParameter("name");
+		String[] hobby = req.getParameterValues("hobby");
+		String gender = req.getParameter("gender");
+		String religion = req.getParameter("religion");
+		String introduction = req.getParameter("introduction");
+		
+		res.setContentType("text/html;charset=utf-8");
+		PrintWriter out = res.getWriter();
+		
+		out.print("멤버정보");
+		out.print("<br> id: " + id);
+		out.print("<br> pwd: " + pwd);
+		out.print("<br> name: " + name);
+		
+		out.print("<br> 취미 : ");
+		for(String str : hobby) {
+			out.print(str + " ");
+		}
+		
+		out.print("<br> gender: " + gender);
+		out.print("<br> religion: " + religion);
+		out.print("<br> introduction: " + introduction);
+		
+		out.close();
+	}
+
+}
+```
+
+### 1.5.2. **POST방식**
+
+![Untitled](https://lgh.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F28f05313-ded6-406d-9c3f-a66c1c71d7db%2FUntitled.png?table=block&id=c2154413-5980-4451-ae90-6cc21d52fd34&spaceId=d2c21b63-4fd7-4cc8-b09a-a59a09d82a76&width=860&userId=&cache=v2)
