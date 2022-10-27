@@ -135,4 +135,5 @@
 * [Eclipse](https://github.com/keonmon/TIL/tree/main/IDE/eclipse)
   * [단축키정리](https://github.com/keonmon/TIL/blob/main/IDE/eclipse/shortcuts.md)
 - [intellij](https://github.com/keonmon/TIL/tree/main/IDE/intellij)
+  - [단축키](https://github.com/keonmon/TIL/blob/main/IDE/intellij/%EB%8B%A8%EC%B6%95%ED%82%A4.md)
 
