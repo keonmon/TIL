@@ -305,3 +305,27 @@ public String repeat(Model model){
     <p th:text="|₩${#numbers.formatInteger(1000000, 3,'COMMA')}|"></p>
     // ₩1,000,000
     ```
+    
+# 2. 활용
+
+## 2.1. thymeleaf 라디오버튼 활용
+
+- `onclick="return(false)"`하면 선택이 바뀌는 것을 막을 수 있다.
+- `th:checked="${key.equals('value')}`는 값을 비교하여 true/false를 리턴한다.
+
+```html
+<form action="/uiForm2" method="get">
+
+  title : <input type="text" name="title" th:value="${title}"><br>
+  
+  <h4>당신이 선택한 좋아하는 운동</h4>
+  <!-- onclick="return(false)"하면 선택이 바뀌는 것을 막을 수 있다. -->
+  <!-- th:checked="${key.equals('value')}는 값을 비교하여 true/false를 리턴한다. -->
+  <input type="radio" onclick="return(false)" id="football" name="exercise" value="football"
+      th:checked="${exercise.equals('football')}"/>축구
+  <input type="radio" onclick="return(false)" id="basketball" name="exercise" value="basketball"
+      th:checked="${exercise.equals('basketball')}"/>농구
+  <input type="radio" onclick="return(false)" id="baseball" name="exercise" value="baseball"
+      th:checked="${exercise.equals('baseball')}"/>야구
+</form>
+```
