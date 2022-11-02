@@ -308,7 +308,7 @@ public String repeat(Model model){
     
 # 2. 활용
 
-## 2.1. thymeleaf 라디오버튼 활용
+## 2.1. 라디오버튼 활용 예제
 
 - `onclick="return(false)"`하면 선택이 바뀌는 것을 막을 수 있다.
 - `th:checked="${key.equals('value')}`는 값을 비교하여 true/false를 리턴한다.
@@ -328,4 +328,49 @@ public String repeat(Model model){
   <input type="radio" onclick="return(false)" id="baseball" name="exercise" value="baseball"
       th:checked="${exercise.equals('baseball')}"/>야구
 </form>
+```
+
+## 2.2. checkbox 활용 예제
+
+- radio와 같이 `onclick="return(false)"`하면 선택이 바뀌는 것을 막을 수 있다.
+- checkbox는 **radio와 달리 중복선택이 가능**하기 때문에 **List타입과 같은 타입**으로 값이 넘어온다.
+    - `th:checked="${key.contains('value')}` 과 같이 요소에 해당 값이 있는지 확인한다.
+
+```html
+<h4>소유 이동수단</h4>
+<input type="checkbox" onclick="return(false)" id="bike" name="vehicles" value="bike"
+       th:checked="${vehicles.contains('bike')}">자전거
+<input type="checkbox" onclick="return(false)" id="car" name="vehicles" value="car"
+       th:checked="${vehicles.contains('car')}">자동차
+<input type="checkbox" onclick="return(false)" id="boat" name="vehicles" value="boat"
+       th:checked="${vehicles.contains('boat')}">보트
+```
+
+## 2.3. select 활용 예제
+
+- select 태그에 `disabled` 하면 비활성화 할 수 있다.
+    - option 태그에 하면 해당 옵션이 비활성화 된다.
+- select의 option은 radio와 같이 단일값이기 때문에
+    - `th:selected="${key.equals('value')}` 과 같이 요소에 해당 값이 있는지 확인한다.
+    - 다른점은 `th:checked`가 아닌 `th:selected`라는 점
+
+```html
+<h4>선호하는 과일</h4>
+<select name="fruits" disabled >
+    <option value="apple" th:selected="${fruits.equals('apple')}">사과</option>
+    <option value="pear" th:selected="${fruits.equals('pear')}">배</option>
+    <option value="banana" th:selected="${fruits.equals('banana')}">바나나</option>
+</select><br>
+```
+
+## 2.4. textarea 활용 예제
+
+- textarea는 readonly 속성으로 값의 변경을 막을 수 있다.
+- `th:text` 에 값을 넣으면 넘어온 값이 적용된다.
+
+```html
+<label for="review">리뷰 메모</label><br>
+<textarea id="review" name="review" rows="4" cols="50" readonly th:text="${review}">
+    review
+</textarea>
 ```
