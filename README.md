@@ -130,7 +130,8 @@
 - [position 속성](https://github.com/keonmon/TIL/blob/main/HTML%26CSS/position.md)
 - [animation 관련 속성](https://github.com/keonmon/TIL/blob/main/HTML%26CSS/animation.md)
 
-
+### Nexacro 넥사크로플랫폼
+- [Basic](https://github.com/keonmon/TIL/blob/main/Nexacro/basic.md)
 ---
   
 ## IDE
