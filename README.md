@@ -132,6 +132,7 @@
 
 ### Nexacro 넥사크로플랫폼
 - [Basic](https://github.com/keonmon/TIL/blob/main/Nexacro/basic.md)
+- [Dataset&Grid](https://github.com/keonmon/TIL/blob/main/Nexacro/dataset_grid.md)
 ---
   
 ## IDE
