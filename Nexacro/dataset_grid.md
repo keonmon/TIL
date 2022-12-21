@@ -7,23 +7,34 @@
   - 바인딩된 컴포넌트에서 데이터를 수정하면 연결된 dataset의 데이터도 함께 변경된다.
 
 ## Dataset의 주요 함수
-- `ds.getRowType(nRow)` : 해당 행의 타입(기존/추가/수정/삭제 등의 상태값)을 구하는 메서드
-- `ds.getColumn(nRow, 열 Idx/Id)` : 해당 행의 특정 열의 값을 구하는 메서드
-- `ds.setColumn(nRow,  열 Idx/Id, 변경값)` : 해당 행의 특정 열을 변경하는 메서드
-- `ds.getCaseCount(조건식, nStart, nEnd)` : 조건식을 만족하는 행의 수를 구하는 메서드
+### `ds.getRowType(nRow)` 
+	: 해당 행의 타입(기존/추가/수정/삭제 등의 상태값)을 구하는 메서드
+### `ds.getColumn(nRow, 열 Idx/Id)` 
+	: 해당 행의 특정 열의 값을 구하는 메서드
+### `ds.setColumn(nRow,  열 Idx/Id, 변경값)` 
+	: 해당 행의 특정 열을 변경하는 메서드
+### `ds.getCaseCount(조건식, nStart, nEnd)` 
+	: 조건식을 만족하는 행의 수를 구하는 메서드
   - 예시 `this.Dataset00.getCaseCount("dept_cd == 'A1'");`
   - 예시 `this.Dataset00.getCaseCount("dept_cd == 'A1'", 3, 50);`
-- `ds.findRow(rowId, 검색값, startRowIdx, endRowIdx)` : 해당 열에서 값이 일치하는 첫 행을 구하는 메서드 (검색 시작/종료idx는 생략 가능)
-- `ds.getCaseMax(조건식, 열 Idx/Id)` : 조건식을 만족하는 행에서, 특정 열의 최대값을 구하는 메서드
-- `ds.deleteRow(nRow)` : 해당 행을 제거하는 메서드 
-- `getRowCount` : 
-- `clearData` : 열 정보를 제외하고 모든 행을 제거하는 메서드
-- filter 메서드
-  - `filter(조건식)` : 조건식을 만족하는 행만 보이게 하는 메서드 
-    - 조건식 대신 `filter("")`를 입력하면 필터링이 해제된다.
-    - 필터링 된 이후 다시 다른 필터링을 하면 이전에 적용된 필터링은 관계없이 `새로운 조건이 적용`됨.
-  - `filterRow(행의 위치)` : 지정된 행을 보이지 않게 필터링하는 메서드 
-
+### `ds.findRow(rowId, 검색값, startRowIdx, endRowIdx)` 
+	: 해당 열에서 값이 일치하는 첫 행을 구하는 메서드 (검색 시작/종료idx는 생략 가능)
+### `ds.getCaseMax(조건식, 열 Idx/Id)` 
+	: 조건식을 만족하는 행에서, 특정 열의 최대값을 구하는 메서드
+### `ds.deleteRow(nRow)` 
+	: 해당 행을 제거하는 메서드 
+### `ds.getRowCount()` 
+	: 데이터셋의 행의 수를 구하는 메서드
+### `ds.clearData()` 
+	: 열 정보를 제외하고 모든 행을 제거하는 메서드
+  
+### filter 메서드
+#### `filter(조건식)` 
+	: 조건식을 만족하는 행만 보이게 하는 메서드 
+  - 조건식 대신 `filter("")`를 입력하면 필터링이 해제된다.
+  - 필터링 된 이후 다시 다른 필터링을 하면 이전에 적용된 필터링은 관계없이 `새로운 조건이 적용`됨.
+#### `filterRow(행의 위치)` 
+	: 지정된 행을 보이지 않게 필터링하는 메서드 
 
 ---
 
@@ -33,15 +44,23 @@
   - 따라서 Grid ↔ Dataset는 변동됨에 따라 서로에게 영향을 주며 반영된다.
 
 ## Grid 컴포넌트의 주요 함수
-- `Grid.setCellPos(nCellIdx)` : 해당 셀을 선택한다. (true/false)를 리턴
-- `Grid.moveToNextCell()` : 포커스를 다음 셀로 이동 (true/false)를 리턴
-- `Grid.showEditor(boolean)` : 선택된 셀이 편집이 가능할 경우, 편집모드로 설정해주는 메서드
-- `Grid.getCellProperty(cell영역('head'/'body'/'summ'), nCellIdx, 프로퍼티명 )` : 셀의 속성(프로퍼티)값을 가져오는 메서드
-- `Grid.setCellProperty(cell영역('head'/'body'/'summ'), nCellIdx, 프로퍼티명, value )` :  셀의 속성(프로퍼티)값을 변경하는 메서드
+### `Grid.setCellPos(nCellIdx)` 
+	: 해당 셀을 선택한다. (true/false)를 리턴
+### `Grid.moveToNextCell()` 
+	: 포커스를 다음 셀로 이동 (true/false)를 리턴
+### `Grid.showEditor(boolean)` 
+	: 선택된 셀이 편집이 가능할 경우, 편집모드로 설정해주는 메서드
+### `Grid.getCellProperty(cell영역('head'/'body'/'summ'), nCellIdx, 프로퍼티명 )` 
+	: 셀의 속성(프로퍼티)값을 가져오는 메서드
+### `Grid.setCellProperty(cell영역('head'/'body'/'summ'), nCellIdx, 프로퍼티명, value )` 
+	:  셀의 속성(프로퍼티)값을 변경하는 메서드
   - `nCellIdx` : 해당 행 내에서 셀이 나열된 순서(합쳐진 셀은 인덱스에서 제외)
-- setter 메서드
-  - `(Grid.set_속성명)` : 넥사크로에서는 별도의 `set_`메서드를 지원한다. 속성명 앞에 `set_`을 붙여 속성에 접근할 수 있다.
+  - 
+## setter 메서드
+  #### `(Grid.set_속성명)` 
+	: 넥사크로에서는 별도의 `set_`메서드를 지원한다. 속성명 앞에 `set_`을 붙여 속성에 접근할 수 있다.
   - `this.Button00.set_text("text");`
+
 ## Tip
 - `this.objects[Object.속성명]` 이런 방식으로 공통 속성을 지정하는 범용메서드를 만들 수 있겠다.
 - expr 스크립트 : 
