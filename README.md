@@ -134,6 +134,7 @@
 ### Nexacro 넥사크로플랫폼
 - [Basic](https://github.com/keonmon/TIL/blob/main/Nexacro/basic.md)
 - [Dataset&Grid](https://github.com/keonmon/TIL/blob/main/Nexacro/dataset_grid.md)
+- [regex활용](https://github.com/keonmon/TIL/blob/main/Nexacro/regex%ED%99%9C%EC%9A%A9.md)
 ---
   
 ## IDE
